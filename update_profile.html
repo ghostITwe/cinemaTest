@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>KinoMan – Личный кабинет</title>
+  </head>
+  <body>
+    <header class="flex">
+      <a href="index.html">Главная</a>
+      <a href="movies.html">Фильмы</a>
+      <button>logout</button>
+    </header>
+    <main>
+      <a href="profile.html">Вернуться обратно</a>
+      <form class="grid">
+        <label for="email">Почта</label>
+        <input type="text" id="email" name="email">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name">
+        <label for="image">Аватарка профиля</label>
+        <input type="file" id="image" name="image">
+        <label for="password">Пароль</label>
+        <input type="password" name="password" id="password">
+        <button class="bg-indigo-500 text-white p-4 text-xl rounded-xl hover:bg-indigo-600">Сохранить изменения</button>
+      </form>
+    </main>
+  </body>
+</html>
