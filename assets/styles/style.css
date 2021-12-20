@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+    @apply text-xl;
+}
+
+.link:hover {
+    @apply decoration-2 underline decoration-sky-600;
+}
+
+.movie-tag {
+    @apply inline-block bg-sky-300 shadow-lg shadow-sky-300/50 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2;
+}

@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="assets/styles/index.css">
     <title>KinoMan – Название фильма</title>
   </head>
-  <body>
-    <header class="flex">
-      <a href="index.html">Главная</a>
-      <a href="registration.html">Регистрация</a>
-      <a href="auth.html">Авторизация</a>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="flex justify-between gap-4 bg-white p-4 border-b-2 border-gray-100">
+      <a href="index.html"><img src="" alt="logo"></a>
+      <nav class="flex gap-8">
+        <a href="index.html" class="link">Главная</a>
+        <a href="movies.html" class="link">Фильмы</a>
+        <a href="profile.html" class="link">Личный кабинет</a>
+      </nav>
     </header>
-    <main>
-      <a href="movies.html">Вернуться обратно</a>
-      <article>
-        <h3>Название фильма</h3>
-        <img src="#" alt="название фильма">
-        <ul>
-          <li>Жанры фильма</li>
-        </ul>
-        <span>Страна + год издания</span>
-        <div>
-          Дата премьеры фильма,
-          Возрастное ограничение,
-          Продолжительность фильма
-        </div>
-        <p>описание фильма
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Ad animi beatae cumque dolor dolores est itaque nam nostrum,
-          perferendis quis quisquam quos vero! Consectetur illo, minus nihil nostrum praesentium quae.
-        </p>
-      </article>
+    <main class="grow">
+      <a href="movies.html" class="bg-sky-600 hover:bg-sky-500 text-center text-white text-md mt-4 p-2">Вернуться обратно</a>
+      <section class="flex">
+        <figure>
+          <img src="assets/images/2.jpg" alt="название фильма" class="rounded">
+        </figure>
+        <article class="">
+          <h3 class="text-3xl px-4 py-2 text-center">Название фильма</h3>
+          <ul>
+            <li>Жанры фильма</li>
+          </ul>
+          <span>Страна + год издания</span>
+          <span>Страна + год издания</span>
+          <div>
+            Дата премьеры фильма,
+            Возрастное ограничение,
+            Продолжительность фильма
+          </div>
+          <h4 class="text-xl px-4 py-2 text-center">Описание фильма:</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ad animi beatae cumque dolor dolores est itaque nam nostrum,
+            perferendis quis quisquam quos vero! Consectetur illo, minus nihil nostrum praesentium quae.
+          </p>
+        </article>
+      </section>
     </main>
-    <footer>
-
+    <footer class="bg-white p-4 shrink-0 mt-8">
+      <p class="text-xl text-gray-500 text-center">© KinoMan 2022</p>
     </footer>
   </body>
 </html>
