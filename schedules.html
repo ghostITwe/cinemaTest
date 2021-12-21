@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>KinoMan – Расписание фильмов</title>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="flex justify-between gap-4 bg-white p-4 border-b-2 border-gray-100">
+      <a href="index.html">
+        <figure class="flex gap-2 items-center">
+          <img src="assets/images/logo_kinoman.svg" alt="logo" class="h-16">
+          <figcaption class="text-4xl text-sky-600">KinoMan</figcaption>
+        </figure>
+      </a>
+      <nav class="flex gap-8 items-center">
+        <a href="index.html" class="link">Главная</a>
+        <a href="movies.html" class="link">Фильмы</a>
+        <a href="schedules.html" class="link">Расписание</a>
+        <a href="profile.html" class="link">Личный кабинет</a>
+      </nav>
+    </header>
+    <main class="grow max-w-screen-2xl w-full m-auto">
+      <p class="text-xs text-sky-400 mb-4 mt-4">
+        <a href="movies.html" class="hover:underline hover:text-sky-500">Фильмы</a> /
+        <a href="#" class="hover:underline hover:text-sky-500">Жанр</a> /
+        <a href="schedules.html" class="hover:underline hover:text-sky-500 transition duration-100">Расписание</a>
+      </p>
+      <h1 class="text-center text-4xl">Расписание</h1>
+      <form class="flex mt-4 my-8 gap-4 items-center">
+        <f-field class="flex gap-2">
+          <label for="date_from">Выберите дату</label>
+          <input type="date" id="date_from">
+        </f-field>
+        <button class="rounded bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-600/50 px-4 py-2">Поиск</button>
+      </form>
+     <section class="grid grid-cols-4 gap-8">
+       <article class="grid shadow-lg rounded-xl bg-white gap-2">
+         <img class="w-full object-cover aspect-square rounded-t-xl" src="assets/images/2.jpg" alt="картинка фильма">
+         <a href="movie.html"><h5 class="text-2xl px-4 pt-2 hover:text-sky-400 transition duration-100">Название фильма</h5></a>
+         <section class="px-8 py-2">
+           <span class="movie-tag">Тэг1</span>
+           <span class="movie-tag">Тэг2</span>
+           <span class="movie-tag">18+</span>
+         </section>
+         <section class="flex gap-4 justify-between">
+           <time class="text-gray-700 text-center px-4 text-xl">21.12.2022</time>
+           <span class="px-4 text-xl">
+             <time>18:57</time> - <time>21:57</time>
+           </span>
+         </section>
+         <p class="text-4xl px-4 text-right">100 ₽</p>
+         <a href="booking_seat.html" class="transition duration-100 bg-sky-600 hover:bg-sky-500 text-center text-white text-md rounded-b-xl p-2 hover:shadow-lg hover:shadow-sky-600/50">Забронировать</a>
+       </article>
+     </section>
+    </main>
+    <footer class="bg-white p-4 shrink-0 mt-8">
+      <p class="text-xl text-gray-500 text-center">© KinoMan 2022</p>
+    </footer>
+  </body>
+</html>

@@ -18,18 +18,31 @@
       </nav>
     </header>
     <main class="grow max-w-screen-2xl w-full m-auto">
-      <a href="profile.html">Вернуться обратно</a>
-      <form class="bg-white grid gap-4 rounded-xl shadow-lg p-4">
-        <label for="email">Почта</label>
-        <input type="text" id="email" name="email">
-        <label for="name">Имя</label>
-        <input type="text" id="name" name="name">
-        <label for="image">Аватарка профиля</label>
-        <input type="file" id="image" name="image">
-        <label for="password">Пароль</label>
-        <input type="password" name="password" id="password">
-        <button class="bg-indigo-500 text-white p-4 text-xl rounded-xl hover:bg-indigo-600">Сохранить изменения</button>
-      </form>
+      <section class="flex m-auto justify-center mt-8">
+        <form class="bg-white grid gap-4 rounded-xl shadow-lg p-4">
+          <h1 class="text-2xl text-center">Редактирование профиля</h1>
+          <f-field class="grid gap-1">
+            <label for="email">Почта</label>
+            <input type="text" id="email" name="email" class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="image">Аватарка профиля</label>
+            <input type="file" id="image" name="image">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <button class="rounded bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-600/50 p-2">Сохранить изменения</button>
+            <a href="profile.html" class="text-sky-600 hover:text-sky-500 text-center text-md">Вернуться в профиль</a>
+          </f-field>
+        </form>
+      </section>
     </main>
     <footer class="bg-white p-4 shrink-0 mt-8">
       <p class="text-xl text-gray-500 text-center">© KinoMan 2022</p>
