@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>KinoMan – Добавление фильма</title>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="flex justify-between gap-4 bg-white p-4 border-b-2 border-gray-100">
+      <a href="index.html">
+        <figure class="flex gap-2 items-center">
+          <img src="assets/images/logo_kinoman.svg" alt="logo" class="h-16">
+          <figcaption class="text-4xl text-sky-600">KinoMan</figcaption>
+        </figure>
+      </a>
+      <nav class="flex gap-8 items-center">
+        <a href="index.html" class="link">Главная</a>
+        <a href="movies.html" class="link">Фильмы</a>
+        <a href="schedules.html" class="link">Расписание</a>
+        <a href="profile.html" class="link">Личный кабинет</a>
+        <a href="admin_panel.html" class="link">Панель администратора</a>
+      </nav>
+    </header>
+    <main class="grow max-w-screen-2xl w-full m-auto">
+      <section class="flex m-auto justify-center mt-8">
+        <form class="bg-white grid grid-cols-2 gap-4 rounded-xl shadow-lg p-4">
+          <h1 class="text-2xl text-center col-span-full">Добавление фильма</h1>
+          <f-field class="grid gap-1">
+            <label for="name">Название фильма</label>
+            <input type="text" id="name" name="name"
+                   class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="country">Страна</label>
+            <input type="text" id="country" name="country"
+                   class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="year">Год производства</label>
+            <input type="text" id="year" name="year"
+                   class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="duration">Продолжительность фильма</label>
+            <input type="text" id="duration" name="duration"
+                   class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="rars">Возрастное ограничение</label>
+            <select name="rars" id="rars"
+                    class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline">
+              <option value="" selected>Выберите ограничение</option>
+              <option value="0">0+</option>
+              <option value="6">6+</option>
+              <option value="12">12+</option>
+              <option value="16">16+</option>
+              <option value="18">18+</option>
+            </select>
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="genres">Жанры фильма</label>
+            <select name="genres" id="genres"
+                    class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline">
+              <option value="" selected>Выберите жанр</option>
+              <option value="">Фомируется через запрос</option>
+            </select>
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="status">Статус фильма</label>
+            <select name="status" id="status"
+                    class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline">
+              <option value="" selected>Выберите статус</option>
+              <option value="new">Новый</option>
+              <option value="announcement">Анонс</option>
+            </select>
+          </f-field>
+          <f-field class="grid gap-1">
+            <label for="premiere">Дата премьеры</label>
+            <input type="date" id="premiere" name="premiere"
+                   class="border border-gray-300 placeholder-gray-500 text-gray-900 rounded p-1">
+          </f-field>
+          <f-field class="grid gap-1 col-span-full">
+            <label for="image">Изображение фильма</label>
+            <input type="file" id="image" name="image"
+                   class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+          </f-field>
+          <f-field class="grid gap-1 col-span-full">
+            <label for="description">Описание фильма</label>
+            <textarea id="description" name="description" rows="4"
+                      class="block p-2 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Введите описание"></textarea>
+          </f-field>
+          <f-field class="grid gap-1 col-span-2">
+            <button class="rounded bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-600/50 p-2">Добавить</button>
+            <a href="admin_panel.html" class="text-sky-600 hover:text-sky-500 text-center text-md">Вернуться обратно</a>
+          </f-field>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-white p-4 shrink-0 mt-8">
+      <p class="text-xl text-gray-500 text-center">© KinoMan 2022</p>
+    </footer>
+  </body>
+</html>
